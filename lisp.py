@@ -1,5 +1,3 @@
-from math import factorial
-
 def fatorial(n):
     n = int(n)
     if n == 1:
@@ -22,10 +20,10 @@ with open("out.dat", "w") as saida:
     for linha in texto:
         x, y = linha
         fx = fibonacci(int(x))
-        fy = factorial(int(y))
+        fy = fatorial(int(y))
         exp = f"Linha {l}:  Fibo: {fx};  Fact: {fy}"
         saida.write(exp)
         l+=1
-        if l < len(texto):
+        if l <= len(texto):
             saida.write("\n")
 
