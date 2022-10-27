@@ -1,6 +1,4 @@
 from math import factorial
-from symbol import factor
-
 
 def fatorial(n):
     n = int(n)
@@ -18,7 +16,6 @@ def fibonacci(n):
 
 
 texto = [linhas.strip().split() for linhas in open("./input.dat").readlines()]
-print(texto)
 
 with open("out.dat", "w") as saida:
     l = 1
